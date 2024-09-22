@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Project Koi Auction System for Breeder.props" />
+</Project>

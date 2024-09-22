@@ -1,0 +1,30 @@
+C:\Project Koi Auction System for Breeder\bin\Debug\net8.0\appsettings.Development.json
+C:\Project Koi Auction System for Breeder\bin\Debug\net8.0\appsettings.json
+C:\Project Koi Auction System for Breeder\bin\Debug\net8.0\Project Koi Auction System for Breeder.staticwebassets.runtime.json
+C:\Project Koi Auction System for Breeder\bin\Debug\net8.0\Project Koi Auction System for Breeder.exe
+C:\Project Koi Auction System for Breeder\bin\Debug\net8.0\Project Koi Auction System for Breeder.deps.json
+C:\Project Koi Auction System for Breeder\bin\Debug\net8.0\Project Koi Auction System for Breeder.runtimeconfig.json
+C:\Project Koi Auction System for Breeder\bin\Debug\net8.0\Project Koi Auction System for Breeder.dll
+C:\Project Koi Auction System for Breeder\bin\Debug\net8.0\Project Koi Auction System for Breeder.pdb
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.AssemblyInfoInputs.cache
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.AssemblyInfo.cs
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.csproj.CoreCompileInputs.cache
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.MvcApplicationPartsAssemblyInfo.cache
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.RazorAssemblyInfo.cache
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.RazorAssemblyInfo.cs
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\staticwebassets.build.json
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\staticwebassets.development.json
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\staticwebassets\msbuild.Project Koi Auction System for Breeder.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\staticwebassets\msbuild.build.Project Koi Auction System for Breeder.props
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Project Koi Auction System for Breeder.props
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Project Koi Auction System for Breeder.props
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\scopedcss\bundle\Project Koi Auction System for Breeder.styles.css
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\scopedcss\projectbundle\Project Koi Auction System for Breeder.bundle.scp.css
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.dll
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\refint\Project Koi Auction System for Breeder.dll
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.pdb
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\Project Koi Auction System for Breeder.genruntimeconfig.cache
+C:\Project Koi Auction System for Breeder\obj\Debug\net8.0\ref\Project Koi Auction System for Breeder.dll
