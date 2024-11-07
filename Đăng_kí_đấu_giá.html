@@ -27,7 +27,8 @@ h1 {
 
 input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+select {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -64,11 +65,20 @@ button:hover {
 
 <div class="container">
   <h1>ĐĂNG KÍ ĐẤU GIÁ</h1>
+  
   <label for="fname">Thông tin cá:</label>
   <input type="text" id="fname" name="fname" placeholder="Fish information..">
 
   <label for="lname">Giá mong muốn:</label>
-  <input type="text" id="lname" name=" lname" placeholder="Desired price..">
+  <input type="text" id="lname" name="lname" placeholder="Desired price..">
+
+  <label for="method">Phương thức đấu giá:</label>
+  <select id="method" name="method">
+    <option value="fixed_price">Bán cá với giá xác định</option>
+    <option value="single_bid">Bỏ giá 1 lần</option>
+    <option value="incremental_bid">Trả giá lên</option>
+    <option value="decremental_bid">Trả giá xuông</option>
+  </select>
 
   <label for="email">Email:</label>
   <input type="email" id="email" name="email" placeholder="Your email..">
