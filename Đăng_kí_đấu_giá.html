@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.cancelbtn {
+  background-color: #f44336;
+}
+
+.cancelbtn:hover {
+  background-color: #da190b;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>ĐĂNG KÍ ĐẤU GIÁ</h1>
+  <label for="fname">Thông tin cá:</label>
+  <input type="text" id="fname" name="fname" placeholder="Fish information..">
+
+  <label for="lname">Giá mong muốn:</label>
+  <input type="text" id="lname" name=" lname" placeholder="Desired price..">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Your email..">
+
+  <label for="phone">Số điện thoại:</label>
+  <input type="tel" id="phone" name="phone" placeholder="Your phone number..">
+
+  <button type="submit">Gửi thông tin</button>
+  <button type="button" class="cancelbtn">Hủy và thoát</button>
+</div>
+
+</body>
+</html>
