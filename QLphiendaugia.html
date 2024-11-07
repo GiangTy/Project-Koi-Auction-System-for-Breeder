@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Phiên Đấu Giá</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Màu nền xanh dương dịu mát */
+            color: #00796b; /* Màu chữ */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #004d40; /* Màu tiêu đề */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Màu nền trắng cho container */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #00796b; /* Màu nút */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #004d40; /* Màu nút khi hover */
+        }
+
+        .auction-status {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .status-button {
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Quản Lý Phiên Đấu Giá</h1>
+    <div>
+        <button id="view-auctions">Xem Danh Sách Đấu Giá</button>
+        <button id="approve-auction">Duyệt Phiên Đấu Giá</button>
+    </div>
+
+    <div class="auction-status" id="auction-status">
+        <h2>Trạng Thái Phiên Đấu Giá</h2>
+        <button class="status-button">Đang Hoạt Động</button>
+        <button class="status-button">Đã Kết Thúc</button>
+        <button class="status-button">Đang Chờ Phê Duyệt</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById('view-auctions').addEventListener('click', function() {
+        document.getElementById('auction-status').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>
