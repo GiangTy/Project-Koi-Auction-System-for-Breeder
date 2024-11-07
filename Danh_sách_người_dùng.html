@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h2 {
+  text-align: center; /* Căn giữa tiêu đề */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa các phần tử trong container */
+}
+
+.table-container {
+  margin-top: 20px; /* Khoảng cách giữa nút và bảng */
+}
+
+button {
+  padding: 10px 20px; /* Tăng kích thước nút */
+  font-size: 16px; /* Tăng kích thước chữ */
+  background-color: #4CAF50; /* Màu nền của nút */
+  color: white; /* Màu chữ */
+  border: none; /* Bỏ viền */
+  border-radius: 5px; /* Bo góc */
+  cursor: pointer; /* Con trỏ chuột khi di chuột qua nút */
+  transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+  margin: 5px; /* Khoảng cách giữa các nút */
+}
+
+button:hover {
+  background-color: #45a049; /* Màu nền khi di chuột qua nút */
+}
+
+.hidden {
+  display: none; /* Ẩn phần tử */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px; /* Giới hạn chiều rộng của bảng */
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 12px; /* Tăng khoảng cách trong ô */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Màu nền cho hàng chẵn */
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Danh sách người dùng</h2>
+  
+  <!-- Nút điều khiển -->
+  <div style="display: flex; justify-content: center;">
+    <button onclick="editUser ()">Chỉnh sửa</button>
+    <button onclick="showApprovedUsers()">Người dùng đã duyệt</button>
+    <button onclick="showPendingUsers()">Người dùng chờ duyệt</button>
+  </div>
+
+  <!-- Bảng người dùng -->
+  <div id="approvedUsers" class="table-container">
+    <table>
+      <tr>
+        <th>STT</th>
+        <th>ID</th>
+        <th>Tên người dùng</th>
+        <th>Tài khoản</th>
+        <th>Mật khẩu</th>
+        <th>Email</th>
+        <th>Số điện thoại</th>
+        <th>Phân quyền</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td><input type="text" placeholder="Nhập ID"></td>
+        <td><input type="text" placeholder="Nhập tên người dùng"></td>
+        <td><input type="text" placeholder="Nhập tài khoản"></td>
+        <td><input type="password" placeholder="Nhập mật khẩu"></td>
+        <td><input type="email" placeholder="Nhập email"></td>
+        <td><input type="tel" placeholder="Nhập số điện thoại"></td>
+        <td>
+          <select>
+            <option value="admin">Admin</option>
+            <option value="user">User </option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Bảng người dùng chờ duyệt -->
+  <div id="pendingUsers" class="table-container hidden">
+    <table>
+      <tr>
+        <th>STT</th>
+        <th>ID</th>
+        <th>Tên người dùng</th>
+        <th>Tài khoản</th>
+        <th>Mật khẩu</th>
+        <th>Email</th>
+        <th>Số điện thoại</th>
+        <th>Trạng thái</th> <!-- Cột Trạng thái -->
+      </tr>
+      <tr>
+        <td>1</td>
+        <td><input type="text" placeholder="Nhập ID"></td>
+        <td><input type="text" placeholder="Nhập tên người dùng"></td>
+        <td><input type="text" placeholder="Nhập tài khoản"></td>
+        <td><input type="password" placeholder="Nhập mật khẩu"></td>
+        <td><input type="email" placeholder="Nhập email"></td>
+        <td><input type="tel" placeholder="Nhập số điện thoại"></td>
+        <td>
+          <select>
+            <option value="approve">Duyệt</option>
+            <option value="reject">Hủy</option>
+          </select>
+        </td> <!-- Thêm ô chọn trạng thái -->
+      </tr>
+    </table>
+  </div>
+</div>
+
+<script>
+function editUser  () {
+  // Thêm logic để chỉnh sửa thông tin người dùng tại đây
+  alert('Chức năng chỉnh sửa chưa được cài đặt.');
+}
+
+function showApprovedUsers() {
+  document.getElementById('approvedUsers').classList.remove('hidden');
+  document.getElementById('pendingUsers').classList.add('hidden');
+}
+
+function showPendingUsers() {
+  document.getElementById('pendingUsers').classList.remove('hidden');
+  document.getElementById('approvedUsers').classList.add('hidden');
+}
+</script>
+
+</body>
+</html>
