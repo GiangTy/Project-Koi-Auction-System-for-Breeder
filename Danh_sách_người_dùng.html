@@ -85,14 +85,14 @@ tr:nth-child(even) {
       </tr>
       <tr>
         <td>1</td>
-        <td><input type="text" placeholder="Nhập ID"></td>
-        <td><input type="text" placeholder="Nhập tên người dùng"></td>
-        <td><input type="text" placeholder="Nhập tài khoản"></td>
-        <td><input type="password" placeholder="Nhập mật khẩu"></td>
-        <td><input type="email" placeholder="Nhập email"></td>
-        <td><input type="tel" placeholder="Nhập số điện thoại"></td>
+        <td><input type="text" placeholder="Nhập ID" id="userId"></td>
+        <td><input type="text" placeholder="Nhập tên người dùng" id="userName"></td>
+        <td><input type="text" placeholder="Nhập tài khoản" id="userAccount"></td>
+        <td><input type="password" placeholder="Nhập mật khẩu" id="userPassword"></td>
+        <td><input type="email" placeholder="Nhập email" id="userEmail"></td>
+        <td><input type="tel" placeholder="Nhập số điện thoại" id="userPhone"></td>
         <td>
-          <select>
+          <select id="userRole">
             <option value="admin">Admin</option>
             <option value="user">User </option>
           </select>
@@ -111,19 +111,19 @@ tr:nth-child(even) {
         <th>Tài khoản</th>
         <th>Mật khẩu</th>
         <th>Email</th>
-        <th>Số điện thoại</th>
+ <th>Số điện thoại</th>
         <th>Trạng thái</th> <!-- Cột Trạng thái -->
       </tr>
       <tr>
         <td>1</td>
-        <td><input type="text" placeholder="Nhập ID"></td>
-        <td><input type="text" placeholder="Nhập tên người dùng"></td>
-        <td><input type="text" placeholder="Nhập tài khoản"></td>
-        <td><input type="password" placeholder="Nhập mật khẩu"></td>
-        <td><input type="email" placeholder="Nhập email"></td>
-        <td><input type="tel" placeholder="Nhập số điện thoại"></td>
+        <td><input type="text" placeholder="Nhập ID" id="pendingUser Id"></td>
+        <td><input type="text" placeholder="Nhập tên người dùng" id="pendingUser Name"></td>
+        <td><input type="text" placeholder="Nhập tài khoản" id="pendingUser Account"></td>
+        <td><input type="password" placeholder="Nhập mật khẩu" id="pendingUser Password"></td>
+        <td><input type="email" placeholder="Nhập email" id="pendingUser Email"></td>
+        <td><input type="tel" placeholder="Nhập số điện thoại" id="pendingUser Phone"></td>
         <td>
-          <select>
+          <select id="pendingUser Status">
             <option value="approve">Duyệt</option>
             <option value="reject">Hủy</option>
           </select>
@@ -134,9 +134,42 @@ tr:nth-child(even) {
 </div>
 
 <script>
-function editUser  () {
-  // Thêm logic để chỉnh sửa thông tin người dùng tại đây
-  alert('Chức năng chỉnh sửa chưa được cài đặt.');
+let users = [
+  {
+    id: '1',
+    name: 'Nguyễn Văn A',
+    account: 'userA',
+    password: 'passwordA',
+    email: 'userA@example.com',
+    phone: '0123456789',
+    role: 'user'
+  }
+];
+
+function editUser () {
+  const userId = document.getElementById('userId').value;
+  const userName = document.getElementById('userName').value;
+  const userAccount = document.getElementById('userAccount').value;
+  const userPassword = document.getElementById('userPassword').value;
+  const userEmail = document.getElementById('userEmail').value;
+  const userPhone = document.getElementById('userPhone').value;
+  const userRole = document.getElementById('userRole').value;
+
+  const userIndex = users.findIndex(user => user.id === userId);
+  if (userIndex !== -1) {
+    users[userIndex] = {
+      id: userId,
+      name: userName,
+      account: userAccount,
+      password: userPassword,
+      email: userEmail,
+      phone: userPhone,
+      role: userRole
+    };
+    alert('Thông tin người dùng đã được cập nhật.');
+  } else {
+    alert('Không tìm thấy người dùng với ID này.');
+  }
 }
 
 function showApprovedUsers() {
