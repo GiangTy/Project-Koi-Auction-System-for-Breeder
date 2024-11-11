@@ -1,0 +1,350 @@
+<html>
+ <head>
+  <title>
+   Danh sách cá Koi - Đấu Giá
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Dark background color */
+            color: #fff; /* Light text color */
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #444; /* Slightly lighter dark background for container */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .koi-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .koi-item {
+            width: 30%;
+            border: 1px solid #ddd; /* Light border color */
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            background-color: #fff; /* Light background for items */
+            color: #000; /* Dark text color */
+            border-radius: 10px;
+        }
+        .koi-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .koi-item h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .koi-item .video-button {
+            display: inline-block;
+            margin: 5px 0; /* Adjusted margin to move it higher */
+            padding: 5px 10px;
+            background-color: #FF0000; /* YouTube red color */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .koi-item .video-button i {
+            margin-right: 5px;
+        }
+        .koi-item .details {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 14px; /* Adjusted font size */
+        }
+        .koi-item .details p {
+            margin: 5px 0;
+        }
+        .koi-item .details .price {
+            color: red;
+            font-weight: bold;
+        }
+        .pagination {
+            margin-top: 20px;
+        }
+        .pagination a {
+            margin: 0 5px;
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .pagination a.active {
+            background-color: #FF0000;
+            color: #fff;
+        }
+        .scroll-container {
+            max-height: 800px; /* Adjust the height as needed */
+            overflow-y: auto;
+        }
+        .back-button {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 8px 16px; /* Adjusted padding to make it smaller */
+            background-color: #FF0000; /* YouTube red color */
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px; /* Adjusted font size to make it smaller */
+        }
+        .back-button i {
+            margin-right: 5px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <h1>
+    Danh sách cá Koi - Đấu Giá
+   </h1>
+   <a class="back-button" href="javascript:history.back()">
+    <i class="fas fa-arrow-left">
+    </i>
+    Quay lại
+   </a>
+   <div class="scroll-container">
+    <div class="koi-list">
+     <div class="koi-item">
+      <img alt="Image of Showa Koi fish" height="300" src="https://storage.googleapis.com/a1aa/image/0sXQ2W1lqD6uLFJ0fxPzf8Kp7OgZppGqpXvXOxA7VhQ7wuuTA.jpg" width="300"/>
+      <h2>
+       SHOWA
+      </h2>
+      <a class="video-button" href="https://youtu.be/aNR5APyS7J4">
+       <i class="fas fa-play">
+       </i>
+       Video
+      </a>
+      <div class="details">
+       <p>
+        Mã Cá Koi : 368
+       </p>
+       <p>
+        Trang Trại: Otaga Koi farm
+       </p>
+       <p>
+        Kích Thước: 25cm
+       </p>
+       <p>
+        Giới tính:
+       </p>
+       <p>
+        Tuổi: 1 năm
+       </p>
+       <p>
+        Giống: SHOWA
+       </p>
+       <p>
+        Xuất xứ: Janpan
+       </p>
+       <p class="price">
+        Giá Khởi Điểm: 1.500.000 vnd
+       </p>
+      </div>
+     </div>
+     <div class="koi-item">
+      <img alt="Image of Ginrin Showa Koi fish" height="300" src="/hinh1thongtin.jpg" width="300"/>
+      <h2>
+       GINRIN SHOWA
+      </h2>
+      <a class="video-button" href="https://youtu.be/HRyxSdJEtlk">
+       <i class="fas fa-play">
+       </i>
+       Video
+      </a>
+      <div class="details">
+       <p>
+        Mã Cá Koi : 365
+       </p>
+       <p>
+        Trang Trại: Otaga Koi farm
+       </p>
+       <p>
+        Kích Thước: 22cm
+       </p>
+       <p>
+        Giới tính:
+       </p>
+       <p>
+        Tuổi: 1 năm
+       </p>
+       <p>
+        Giống: SHOWA
+       </p>
+       <p>
+        Xuất xứ: Janpan
+       </p>
+       <p class="price">
+        Giá Khởi Điểm: 1.500.000 vnd
+       </p>
+      </div>
+     </div>
+     <div class="koi-item">
+      <img alt="Image of Ginrin Yamabuki Ogon Koi fish" height="300" src="/Hinh2ThongTin.jpg" width="300"/>
+      <h2>
+       GINRIN YAMABUKI OGON
+      </h2>
+      <a class="video-button" href="https://youtu.be/fkW42V8g0p4">
+       <i class="fas fa-play">
+       </i>
+       Video
+      </a>
+      <div class="details">
+       <p>
+        Mã Cá Koi : 402
+       </p>
+       <p>
+        Trang Trại: Otaga Koi farm
+       </p>
+       <p>
+        Kích Thước: 22cm
+       </p>
+       <p>
+        Giới tính:
+       </p>
+       <p>
+        Tuổi: 1 năm
+       </p>
+       <p>
+        Giống: OGON
+       </p>
+       <p>
+        Xuất xứ: Janpan
+       </p>
+       <p class="price">
+        Giá Khởi Điểm: 1.500.000 vnd
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="koi-list">
+     <div class="koi-item">
+      <img alt="Image of Kohaku Koi fish" height="300" src="/Hinh3ThongTin.jpg" width="300"/>
+      <h2>
+       KOHAKU
+      </h2>
+      <a class="video-button" href="https://youtube.com/shorts/tHt8lAVxgyc?si=8sCP1gUNaAaEdfO-">
+       <i class="fas fa-play">
+       </i>
+       Video
+      </a>
+      <div class="details">
+       <p>
+        Mã Cá Koi : 123
+       </p>
+       <p>
+        Trang Trại: Otaga Koi farm
+       </p>
+       <p>
+        Kích Thước: 30cm
+       </p>
+       <p>
+        Giới tính:
+       </p>
+       <p>
+        Tuổi: 2 năm
+       </p>
+       <p>
+        Giống: KOHAKU
+       </p>
+       <p>
+        Xuất xứ: Janpan
+       </p>
+       <p class="price">
+        Giá Khởi Điểm: 2.000.000 vnd
+       </p>
+      </div>
+     </div>
+     <div class="koi-item">
+      <img alt="Image of Sanke Koi fish" height="300" src="/Hinh4thongtin.jpg" width="300"/>
+      <h2>
+       SANKE
+      </h2>
+      <a class="video-button" href="https://youtube.com/shorts/tHt8lAVxgyc?si=8sCP1gUNaAaEdfO-">
+       <i class="fas fa-play">
+       </i>
+       Video
+      </a>
+      <div class="details">
+       <p>
+        Mã Cá Koi : 234
+       </p>
+       <p>
+        Trang Trại: Otaga Koi farm
+       </p>
+       <p>
+        Kích Thước: 28cm
+       </p>
+       <p>
+        Giới tính:
+       </p>
+       <p>
+        Tuổi: 2 năm
+       </p>
+       <p>
+        Giống: SANKE
+       </p>
+       <p>
+        Xuất xứ: Janpan
+       </p>
+       <p class="price">
+        Giá Khởi Điểm: 1.800.000 vnd
+       </p>
+      </div>
+     </div>
+     <div class="koi-item">
+      <img alt="Image of Tancho Koi fish" height="300" src="/Hinh5ThongTin.jpg" width="300"/>
+      <h2>
+       TANCHO
+      </h2>
+      <a class="video-button" href="https://youtube.com/shorts/tHt8lAVxgyc?si=8sCP1gUNaAaEdfO-">
+       <i class="fas fa-play">
+       </i>
+       Video
+      </a>
+      <div class="details">
+       <p>
+        Mã Cá Koi : 345
+       </p>
+       <p>
+        Trang Trại: Otaga Koi farm
+       </p>
+       <p>
+        Kích Thước: 26cm
+       </p>
+       <p>
+        Giới tính:
+       </p>
+       <p>
+        Tuổi: 1 năm
+       </p>
+       <p>
+        Giống: TANCHO
+       </p>
+       <p>
+        Xuất xứ: Janpan
+       </p>
+       <p class="price">
+        Giá Khởi Điểm: 1.700.000 vnd
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
